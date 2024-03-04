@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+  </head>
+  <body>
+     <container class="container">
+      <div class="part1">
+        <h1>TODO</h1>
+        <button class="DarkThemeToggle">
+        <img class="DarkThemeToggle__activate" src="/images/icon-moon.svg" >
+        <img class="DarkThemeToggle__deactivate" src="/images/icon-sun.svg">
+        
+       </button>
+       </div>
+     
+      
+    </header>
+
+       <div class="TaskSearchBar">
+         <form class="TaskSearchBar__searchContent">
+          <button class="buttoncheck" ></button>
+          <input
+            id="search-input"
+            class="TaskSearchBar__input"
+            type="text"
+            placeholder="creat a new todo..."
+            required
+          />
+         </form>
+      </div>
+<div class="tasklist">    
+         <ul class="TaskList__list"></ul>
+<!--  <ul class="TaskList__list"> <ol class="TaskList__taskContent">
+         <div class='TaskList__checkbox  ' tabindex="0" role="button">
+          </div>
+         <div class='TaskList__valueContent'>
+           <p class='TaskList__value' >
+            hello
+            </p>
+ <img class="deleteIcon" src="/images/icon-cross.svg" alt="">            
+ 
+         </div>
+       </ol>
+        <ol class="TaskList__taskContent">
+         <div class='TaskList__checkbox   ' tabindex="0" role="button">
+          </div>
+         <div class='TaskList__valueContent'>
+           <p class='TaskList__value' >
+            hello
+            </p>
+            <img class="deleteIcon" src="/images/icon-cross.svg" alt="">            
+
+ 
+         </div>
+       </ol></ul>-->
+         
+
+   
+      
+<div class="todo-btns">
+  <p class="left-tasks">
+    <span class="number-tasks">0</span> items left
+  </p>
+  <div class="control-btns">
+    <button class="all-btn">All</button>
+    <button class="btn active-btn">Active</button>
+    <button class="btn completed-btn">Completed</button>
+  </div>
+  <button class="btn clear-competed-btn">Clear Completed</button>
+</div>
+ 
+     </div>
+    </div>
+     </container>
+
+    <script src="script.js"></script>
+  </body>
+</html>

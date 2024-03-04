@@ -1,0 +1,240 @@
+:root {
+  --font-size-small: 1.4rem;
+  --font-size-regular: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-xLarge: 3.5rem;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --default-padding: 1.5rem;
+  --default-border: 0.5rem;
+  --font-family-ar: "Almarai", sans-serif;
+  --timing-animation: 0.2s;
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-ark-Grayish-Blue: hsl(235, 19%, 35%);
+  --color-light-gray: #f1f3f5;
+  --color-text: var(--color-black);
+  --color-bg: var(--color-light-gray);
+  --color-input: var(--color-white);
+  --color-link: var(--color-blue);
+  --color-task-hover: #ececec;
+  --color-bg-dark-theme: #222222;
+  --color-input-dark-theme: #333333;
+  --color-text-dark-theme: var(--color-light-gray);
+  --background-color: #fafafa;
+  --color-text: #484b6a;
+  --bg-todo-box: #fff;
+  --border-color: #e4e5f1;
+  --drag-color-text: #9394a5;
+  --light-mode: inline;
+  --dark-mode: none;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+html {
+  font-size: 62%;
+}
+
+body {
+  background-image: url(/images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+.buttoncheck {
+  background-color: var(--bg-todo-box);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--Light-Grayish-Blue);
+  margin-left: 12px;
+  margin-top: 14px;
+}
+.TaskSearchBar__searchContent {
+  display: flex;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 100px auto;
+  width: 550px;
+}
+.part1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 160px;
+}
+h1 {
+  color: var(--Very-Light-Gray);
+  letter-spacing: 1.5rem;
+  font-size: var(--font-size-xLarge);
+}
+.theme--icon {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+.DarkThemeToggle__deactivate {
+  display: var(--dark-mode);
+}
+.DarkThemeToggle__activate {
+  display: var(--light-mode);
+}
+.DarkThemeToggle {
+  background: none;
+  border: 0;
+
+  cursor: pointer;
+}
+.TaskSearchBar__input {
+  width: 320px;
+  padding: var(--default-padding);
+  border-radius: var(--default-border);
+  border: 0cm;
+  font-size: 15px;
+  color:var(--color-text);
+  background-color: var(--background-color);
+}
+
+.TaskSearchBar {
+  background-color: var(--background-color);
+  border-radius: var(--default-border);
+  display: flex;
+  margin-bottom: 25px;
+}
+.TaskList__taskContent {
+  background-color: transparent;
+  width: 100%;
+  border-top: 1px solid var(--border-color);
+  padding: 12px;
+  display: flex;
+}
+.TaskList__checkbox {
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--Light-Grayish-Blue);
+
+  border-radius: 50%;
+}
+.TaskList__valueContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+li::marker {
+  border: 2px solid black;
+  color: white;
+  font-size: 50px;
+}
+.TaskList__value {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.TaskList__checkbox:hover,
+.buttoncheck:hover {
+  border: 1px solid hsl(280, 87%, 29%);
+  border-top-color: #57ddff;
+  border-left-color: #57ddff;
+  border-right-color: #c058f3;
+  border-bottom-color: #c058f3;
+  cursor: pointer;
+}
+ol {
+  border-top: 1px solid var(--color-light-gray);
+}
+.tasklist {
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.deleteIcon {
+  display: none;
+}
+
+.TaskList__valueContent:hover .deleteIcon {
+  display: inline-block; /* or display: block; depending on the desired layout */
+  cursor: pointer;
+}
+.isDark {
+  background-color: #333333;
+  color: white;
+  background-image: url(/images/bg-desktop-dark.jpg);
+}
+
+html:has(.isDark) {
+  --background-color: #161722;
+  --color-text: #e4e5f1;
+  --bg-todo-box: #25273c;
+  --border-color: #484b6a;
+  --drag-color-text: #484b6a;
+
+  --light-mode: none;
+  --dark-mode: inline;
+}
+.todo-btns {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+.left-tasks {
+  color: var(--drag-color-text);
+}
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--drag-color-text);
+}
+.control-btns {
+  display: flex;
+  gap: 10px;
+  color: var(--drag-color-text);
+}
+
+button:hover {
+  color: var(--color-text);
+}
+button:active {
+  color: #3a7bfd;
+  /* You can add more styles for the clicked state */
+}
+.complatedtask {
+  text-decoration: line-through;
+  color: #9394a5;
+}
+.TaskList__checked {
+  background: url(/images/icon-check.svg), linear-gradient(#57ddff, #c058f3);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.diaApper{
+    display: none;
+}
