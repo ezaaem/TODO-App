@@ -115,7 +115,7 @@ h1 {
   border-radius: var(--default-border);
   border: 0cm;
   font-size: 15px;
-  color:var(--color-text);
+  color: var(--color-text);
   background-color: var(--background-color);
 }
 
@@ -235,6 +235,19 @@ button:active {
   background-repeat: no-repeat;
   background-position: center;
 }
-.diaApper{
-    display: none;
+.disApper {
+  display: none;
+}
+.EmptyList {
+  text-align: center;
+  color: var(--drag-color-text);
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 50px;
+  color: var(--drag-color-text);
+
 }
