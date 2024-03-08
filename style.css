@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  background-image: url(/images/bg-desktop-light.jpg);
+  background-image: url(images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -183,7 +183,7 @@ ol {
 .isDark {
   background-color: #333333;
   color: white;
-  background-image: url(/images/bg-desktop-dark.jpg);
+  background-image: url(images/bg-desktop-dark.jpg);
 }
 
 html:has(.isDark) {
@@ -231,7 +231,7 @@ button:active {
   color: #9394a5;
 }
 .TaskList__checked {
-  background: url(/images/icon-check.svg), linear-gradient(#57ddff, #c058f3);
+  background: url(images/icon-check.svg), linear-gradient(#57ddff, #c058f3);
   background-repeat: no-repeat;
   background-position: center;
 }
