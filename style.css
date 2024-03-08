@@ -251,3 +251,38 @@ footer {
   color: var(--drag-color-text);
 
 }
+@media (max-width: 570px) {
+  body {
+    background-image: url(images/bg-mobile-light.jpg);
+    width: 100wh;
+  }
+  .isDark {
+    background-image: url(images/bg-mobile-dark.jpg);
+  }
+
+  .container {
+    width: 35rem;
+    margin: 80px auto;
+  }
+
+  .todo-btns {
+    position: relative;
+  }
+
+  .control-btns {
+    background-color: var(--background-color);
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.178);
+    padding: var(--default-padding);
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 0rem;
+    bottom: -8rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer {
+    margin-top: 7rem;
+  }
+}
+
