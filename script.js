@@ -33,7 +33,7 @@ const renderTask = (Tasks) => {
 
 <div class='TaskList__valueContent'>
   <p class='TaskList__value'>${task.value}</p>
-  <img class="deleteIcon" src="/images/icon-cross.svg" alt="" role="button">
+  <img class="deleteIcon" src="images/icon-cross.svg" alt="" role="button">
 </div>
 </li>`;
   });
